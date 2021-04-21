@@ -1,0 +1,145 @@
+body
+{
+	background-image: url('https://www.pbs.org/food/wp-content/blogs.dir/2/files/2020/04/Video-thumbnail-no-text-670x370.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	scroll-behavior: smooth;
+}
+header
+{
+	padding: 25px;
+	font-family: 'Pacifico', cursive;
+	text-align: right;
+	color: white;
+}
+#main-nav
+{
+	padding: 10px;
+	text-align:right;
+	flex-direction: row;
+}
+#main-nav a
+{
+	color: white;
+	text-decoration: none;
+	margin-left: 60px;
+	border:2px solid white;
+	border-radius: 10px;
+	padding: 5px 15px;
+}
+#main-nav a:hover
+{
+	box-shadow: 0 0 10px white;
+}
+#section_1
+{
+	margin-top: 20px;
+	display: inline-block;
+}
+#section_1 .article_01
+{
+	width: 330px;
+	height: 550px;
+	border: 2px solid white;
+	border-radius: 20px;
+	display: inline-block;
+	margin-left: 60px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 10px white;
+	text-align: justify;
+}
+.article_01 img
+{
+	width: 300px;
+    border-radius:20px;
+    margin-left: 15px;
+}
+.article_01 h3,p
+{
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+#section_2
+{
+	margin-top: 30px;
+}
+#section_2 .article_02
+{
+	border: 2px solid white;
+	/*margin: 10px auto;*/
+	border-radius: 20px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+.article_02 img
+{
+	width: 180px;
+	height: 200px;
+	border-radius: 30px;
+}
+.col-4 
+{
+	margin: auto
+}
+.article_02 h3
+{
+	color: white;
+	text-align: center;
+}
+/*.article_02 button
+{
+	margin-left: 250px;
+}*/
+.article_02 button:hover
+{
+	box-shadow: 0 0 10px white;
+	border-radius: 20px;
+}
+footer h4
+{
+	color: white;
+	text-align: center;
+}
+
+
+
+
+/*MEDIA QUIRIES*/
+@media (max-width: 600px)
+{
+	#main-nav 
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	#main-nav a
+	{
+		margin-top: 6px;
+	}
+}
+@media (min-width: 601px) and (max-width: 900px)
+{
+	#main-nav
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	#main-nav a
+	{
+		margin-top: 6px;
+	}
+}
+@media (max-width: 500px)
+{
+	.article_02
+	{
+		width:500px;
+		display: flex;
+		flex-direction: column; 
+	}
+}
